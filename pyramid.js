@@ -1,17 +1,18 @@
 function pyramid(x, y, z) {
   let pyr = []
+  let nbs = ''
   for (i = 0; i < x; i++) {
-    pyr += z
-    z += z
+    nbs += z
+    pyr.push(nbs)
+
   }
   if (y === true) {
-    pyr = pyr.sort()
+    pyr = pyr.sort((a, b) => b.length - a.length)
   }
-  pyr = pyr.join('\n')
-  return pyr
+  return pyr.join('\n')
 }
 
-let base = 10
-let reverse = false
-let symbol = '0'
+let base = 20
+let reverse = true
+let symbol = '8'
 console.log(pyramid(base, reverse, symbol))

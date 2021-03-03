@@ -1,4 +1,5 @@
 function biggest(nbl) {
+  let big = nbl[0]
   for (i = 0; i < nbl.length; i++) {
     if (nbl[i] > nbl[i - 1]) {
       big = nbl[i]
@@ -12,6 +13,11 @@ function sortAscend(nbl) {
   return sortnbl
 }
 
-let nblist = [99, 100, 101, 1, 2]
+function makeUnique(nbl) {
+  return sortAscend(nbl).filter((item, index) => sortAscend(nbl).indexOf(item) === index)
+}
+
+let nblist = [1, 2, 1, 3, 2, 4, 5, 7, 5, 2]
 console.log(biggest(nblist))
 console.log(sortAscend(nblist))
+console.log(makeUnique(nblist))
