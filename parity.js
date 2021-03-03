@@ -1,17 +1,9 @@
 function isOdd(x) {
-  if (x % 2 !== 0) {
-    return true
-  } else {
-    return false
-  }
+  return x % 2 !== 0 ? true : false
 }
 
 function isEven(x) {
-  if (isOdd(x) === false) {
-    return true
-  } else {
-    return false
-  }
+  return isOdd(x) === false ? true : false
 }
 
 let nb = 7

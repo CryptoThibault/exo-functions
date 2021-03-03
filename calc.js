@@ -27,7 +27,6 @@ function calc(x, y, z) {
   }
 }
 
-console.log(calc(5, '*', 7))
-
-// op = '5 * 7'.split(' ')
-// console.log(calc(op[0], op[1], op[2]))
+op = '5*7'
+op = op.split('')
+console.log(calc(op[0], op[1], op[2]))
