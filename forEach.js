@@ -5,10 +5,11 @@ function convertMiToKm(x) {
 function forEach(t) {
   let table = []
   for (i = 0; i < t.length; i++) {
-    table.push(t[i])
+    table.push(converter(t[i]))
   }
   return table
 }
 
 let tab = [25, 21, 40, 36, 28, 39, 35]
-console.log(convertMiToKm(forEach(tab)))
+let converter = convertMiToKm
+console.log(forEach(tab))

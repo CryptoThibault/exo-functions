@@ -1,14 +1,17 @@
-function forEach(t) {
+function isOdd(x) {
+  return x % 2 !== 0 ? true : false
+}
+
+function filter(t) {
   let table = []
   for (i = 0; i < t.length; i++) {
-    table.push(t[i])
+    if (filtertype(t[i]) === true) {
+      table.push(t[i])
+    }
   }
   return table
 }
 
-function filter(t) {
-  return forEach(t)
-}
-
-tab = [25, 21, 40, 36, 28, 39, 35]
+let tab = [25, 32, 40, 21, 28, 33, 35]
+let filtertype = isOdd
 console.log(filter(tab))
