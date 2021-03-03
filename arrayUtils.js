@@ -1,11 +1,9 @@
 function biggest(nbl) {
   return Math.max(...nbl)
-
 }
 
 function sortAscend(nbl) {
   return nbl.sort((a, b) => a - b)
-
 }
 
 function makeUnique(nbl) {
