@@ -1,14 +1,9 @@
 function reverseStr(str) {
-  let rev = str.split('').reverse().join('')
-  return rev
+  return str.split('').reverse().join('')
 }
 function isPalindrome(str) {
-  if (str === reverseStr(str)) {
-    return true
-  } else {
-    return false
-  }
+  return str === reverseStr(str) ? true : false
 }
-let string = 'hahahah'
+let string = 'hahah'
 console.log(reverseStr(string))
 console.log(isPalindrome(string))
