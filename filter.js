@@ -1,14 +1,14 @@
 function isOdd(x) {
-  return x % 2 !== 0 ? true : false
+  return x % 2 !== 0
 }
 function isEven(x) {
-  return isOdd(x) === false ? true : false
+  return !isOdd(x)
 }
 
 function filter(tab, func) {
   let newtab = []
   tab.forEach(elem => {
-    if (func(elem) === true) { newtab.push(elem) }
+    if (func(elem)) { newtab.push(elem) }
   })
   return newtab
 }

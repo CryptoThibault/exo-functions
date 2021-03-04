@@ -1,10 +1,7 @@
-function count(x, y, z) {
-  return x + y * z
+function count(min, max, step) {
+  for (i = min; i <= max; i += step) {
+    console.log(i)
+  }
 }
 
-let min = 20
-let max = 140
-let step = 4
-for (i = 0; i < (max + 1 - min) / step; i++) {
-  console.log(count(min, i, step))
-}
+count(0, 50, 5)

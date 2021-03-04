@@ -27,6 +27,6 @@ function calc(x, y, z) {
   }
 }
 
-op = '5*7'
-op = op.split('')
+op = '50 / 4 '
+op = op.split(' ')
 console.log(calc(op[0], op[1], op[2]))

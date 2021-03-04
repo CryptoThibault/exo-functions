@@ -1,10 +1,10 @@
 function isOdd(x) {
-  return x % 2 !== 0 ? true : false
+  return x % 2 !== 0
 }
 
 function isEven(x) {
-  return isOdd(x) === false ? true : false
+  return !isOdd(x)
 }
 
-let nb = 8
+let nb = 7
 console.log(`The number ${nb} is ${isEven(nb) === true ? 'even' : 'odd'}.`)
