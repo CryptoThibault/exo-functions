@@ -6,6 +6,5 @@ function isEven(x) {
   return isOdd(x) === false ? true : false
 }
 
-let nb = 7
-console.log(`Odd: ${isOdd(nb)}`)
-console.log(`Even: ${isEven(nb)}`)
+let nb = 8
+console.log(`The number ${nb} is ${isEven(nb) === true ? 'even' : 'odd'}.`)

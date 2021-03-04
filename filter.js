@@ -1,17 +1,16 @@
 function isOdd(x) {
   return x % 2 !== 0 ? true : false
 }
-
-function filter(t) {
-  let table = []
-  for (i = 0; i < t.length; i++) {
-    if (filtertype(t[i]) === true) {
-      table.push(t[i])
-    }
-  }
-  return table
+function isEven(x) {
+  return isOdd(x) === false ? true : false
 }
 
-let tab = [25, 32, 40, 21, 28, 33, 35]
-let filtertype = isOdd
-console.log(filter(tab))
+function filter(tab, func) {
+  let newtab = []
+  tab.forEach(elem => {
+    if (func(elem) === true) { newtab.push(elem) }
+  })
+  return newtab
+}
+
+console.log(filter([25, 32, 40, 21, 28, 33, 35], isEven))

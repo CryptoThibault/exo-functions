@@ -2,8 +2,4 @@ function countWheels(a, b, c, d) {
   return a + b * 2 + c * 4 + d * 6
 }
 
-let nb_monocycle = 3
-let nb_moto = 5
-let nb_voiture = 6
-let nb_limousine = 1
-console.log(countWheels(nb_monocycle, nb_moto, nb_voiture, nb_limousine))
+console.log(countWheels(nb_monocycle = 1, nb_moto = 8, nb_voiture = 6, nb_limousine = 2))

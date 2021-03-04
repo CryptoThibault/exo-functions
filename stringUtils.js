@@ -4,6 +4,6 @@ function reverseStr(str) {
 function isPalindrome(str) {
   return str === reverseStr(str) ? true : false
 }
-let string = 'hahah'
-console.log(reverseStr(string))
-console.log(isPalindrome(string))
+
+let string = 'kayak'
+console.log(`${reverseStr(string)} is ${isPalindrome(string) === true ? '' : 'not'} a palindrome.`)
