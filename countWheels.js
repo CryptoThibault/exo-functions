@@ -1,5 +1,5 @@
-function countWheels(a, b, c, d) {
-  return a + b * 2 + c * 4 + d * 6
+function countWheels(nb_monocycle, nb_moto, nb_voiture, nb_limousine) {
+  return nb_monocycle + nb_moto * 2 + nb_voiture * 4 + nb_limousine * 6
 }
 
-console.log(countWheels(nb_monocycle = 1, nb_moto = 8, nb_voiture = 6, nb_limousine = 2))
+console.log(`Le total de roues est ${countWheels(3, 6, 4, 2)}`)
