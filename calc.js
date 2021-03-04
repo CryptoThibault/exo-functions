@@ -27,6 +27,4 @@ function calc(x, y, z) {
   }
 }
 
-op = '50 / 4 '
-op = op.split(' ')
-console.log(calc(op[0], op[1], op[2]))
+console.log(calc(5, '+', 6))
